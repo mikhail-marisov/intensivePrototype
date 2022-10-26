@@ -9,6 +9,11 @@ public class Main {
 		chair1.weight = 3;
 		chair1.Colour = "brown";
 		
+		Chair chair3 = new Chair();
+		chair3.material = "wood";
+		chair3.weight = 3;
+		chair3.Colour = "brown";
+		
 		Table table1 = new Table();
 		table1.material = "plastic";
 		table1.weight = 5;
@@ -17,6 +22,8 @@ public class Main {
 		System.out.println("chair1 " + chair1);
 		Chair chair2 = (Chair) chair1.clone();
 		System.out.println("chair2 " + chair2);
+		System.out.println(chair2.equals(chair3));
+		System.out.println("chair3 " + chair3);
 		
 		System.out.println("table1 " + table1);
 		Table table2 = (Table) table1.clone();
